@@ -5,7 +5,7 @@ import sys
 import os
 
 def main():
-    username="userproxy"
+    username="anvirus"
     try:
         password_proxy =raw_input("type your password here: ")
     except:
@@ -21,7 +21,7 @@ def main():
     os.system("""
             echo '
             logoutput: syslog /var/log/danted.log
-            internal: eth0 port = 1080
+            internal: eth0 port = 280
             external: eth0
              
             socksmethod: username
@@ -45,7 +45,7 @@ def main():
     os.system("apt-get -y install ufw")
     os.system("ufw status")
     os.system("ufw allow ssh")
-    os.system("ufw allow proto tcp from any to any port 1080")
+    os.system("ufw allow proto tcp from any to any port 280")
     os.system("ufw status numbered")
     os.system("echo 'y' | ufw enable")
     os.system("""
@@ -63,7 +63,7 @@ exit 0
     os.system("echo '________________________________'")
     os.system("echo ' '")
     os.system("echo \"YOUR IP ADDRESS: `hostname -I | awk '{print $1}'`\"")
-    os.system("echo 'PORT: 1080'")
+    os.system("echo 'PORT: 280'")
     os.system("echo 'LOGIN: %s'" % username)
     os.system("echo 'PASSWORD: %s'" % password_proxy)
 
