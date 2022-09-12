@@ -12,7 +12,7 @@ https://m.do.co/c/25a7f93236fc
 wget https://raw.githubusercontent.com/AnIHULI/socks5/master/proxy2.py
 
 4. run <br>
-python proxy.py
+python proxy2.py
 
 5. type your password for proxy
 
